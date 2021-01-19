@@ -3,7 +3,7 @@
   padding: 0;
   list-style: none;
   outline: none;
-  font-family: "Roboto", -apple-system, system-ui, sans-serif;
+  font-family: 'Roboto', -apple-system, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,13 +19,13 @@
   border-radius: 10px;
   border: 1px solid #f4f6f8;
   font-size: 14px;
-}
-.todo__sidebar {
-  background-color: aliceblue;
-  width: 200px;
-  height: 100%;
-  border-right: 1px solid #ccc;
-  padding: 60px 20px;
-}
 
-/*# sourceMappingURL=index.css.map */
+  &__sidebar {
+    background-color: aliceblue;
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    padding: 60px 20px;
+  }
+
+}

@@ -1,17 +1,48 @@
 .list {
   margin-bottom: 30px;
 }
+.list__add-button {
+  opacity: 0.4;
+}
+.list__add-button:hover {
+  opacity: 1;
+}
 .list li {
   display: flex;
   align-items: center;
   padding: 10px 12px;
   cursor: pointer;
   margin-bottom: 5px;
+  transition: background-color 0.15s ease-in-out;
+}
+.list li:hover .list__remove-icon {
+  opacity: 0.2;
+}
+.list li .list__remove-icon {
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+.list li .list__remove-icon:hover {
+  opacity: 0.8;
+}
+.list li span {
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 160px;
+  white-space: nowrap;
+}
+.list li:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 .list li.active {
   background: #fff;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
+}
+.list li .badge {
+  position: relative;
+  left: 5px;
 }
 .list li i {
   display: inline-flex;
@@ -19,22 +50,6 @@
 }
 .list li i img {
   opacity: 0.6;
-}
-.list li .badge {
-  width: 10px;
-  height: 10px;
-  border-radius: 30px;
-  position: relative;
-  left: 5px;
-}
-.list li .badge--green {
-  background-color: #42B883;
-}
-.list li .badge--blue {
-  background-color: #64C4ED;
-}
-.list li .badge--pink {
-  background-color: #FFBBCC;
 }
 
 /*# sourceMappingURL=List.css.map */
